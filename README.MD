@@ -5,3 +5,9 @@
 - 将普通的Maven项目转化为Java Web项目
 - 在IDEA中集成Tomcat
 - 将代码提交到本地Git仓库并推送到远程Git仓库
+
+#### Chapter2
+- 使用 Servlet 和 JSP 完成一个JavaWeb工程
+- 对数据库操作进行封装
+- 使用DbUtils简化了JDBC代码
+- 使用JUnit对封装好的数据库操作进行单元测试
