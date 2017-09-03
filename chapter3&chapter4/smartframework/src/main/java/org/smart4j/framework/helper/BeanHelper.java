@@ -29,7 +29,7 @@ public final class BeanHelper {
     }
 
     /**
-     * 获取Bean示例
+     * 获取Bean实例
      */
     @SuppressWarnings("unchecked")
     public static <T> T getBean(Class<T> cls) {
@@ -37,5 +37,12 @@ public final class BeanHelper {
             throw new RuntimeException("can not get bean by class: " + cls);
         }
         return (T) BEAN_MAP.get(cls);
+    }
+
+    /**
+     * 设置Bean实例
+     */
+    public static void setBean(Class<?> cls, Object obj) {
+        BEAN_MAP.put(cls, obj);
     }
 }
